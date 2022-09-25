@@ -11,7 +11,7 @@ function App() {
 
   return (
     <UIContext.Provider value={{ openClose, setOpenClose }}>
-      <ThemeProvider theme={ LightTheme }>
+      <ThemeProvider theme={ DarkTheme }>
         <CssBaseline/>
         <LandingPage/>
       </ThemeProvider>
