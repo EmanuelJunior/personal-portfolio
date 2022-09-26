@@ -26,7 +26,7 @@ export const SideMenu = () => {
       onClose={ toggleDrawer( false, setOpenClose ) }
       sx={{ backdropFilter: "blur(2px)", transition: "all 0.5s ease-out" }}
     >
-      <List sx={{ borderTop: '1px solid #333' }}>
+      <List sx={{ borderTop: `1px solid #333` }}>
         <ListItem sx={{ my: 2}}>
           <ListItemIcon>
             <Avatar alt='EmanuelJunior' sx={{ width: 56, height: 56 }} src='/src/assets/img/emanuelJunior.jpeg'>A</Avatar>
@@ -45,7 +45,7 @@ export const SideMenu = () => {
 
         <ListItem button>
           <ListItemIcon>
-            <Web fontSize='medium'/>
+            <Web/>
           </ListItemIcon>
           <ListItemText primary={"Proyectos"} />
         </ListItem>

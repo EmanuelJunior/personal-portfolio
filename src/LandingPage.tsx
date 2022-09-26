@@ -1,10 +1,12 @@
-import { NavBar, SideMenu } from './components/ui/';
+import { Header, NavBar, SideMenu } from "./components/ui/";
 
 export const LandingPage = () => {
   return (
     <>
-      <NavBar/>
-      <SideMenu/>
+      <NavBar />
+      <SideMenu />
+      
+      <Header/>
     </>
-  )
-}
+  );
+};

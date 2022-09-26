@@ -1,4 +1,5 @@
 import { createTheme } from '@mui/material/styles';
+import { teal } from '@mui/material/colors';
 
 export const LightTheme = createTheme({
   palette: {
@@ -7,7 +8,7 @@ export const LightTheme = createTheme({
       main: '#fff',
     },
     secondary: {
-      main: '#dc004e',
+      main: teal[600],
     },
     error: {
       main: '#d32f2f',
@@ -21,7 +22,7 @@ export const LightTheme = createTheme({
     MuiLink: {
       defaultProps: {
         underline: 'none',
-        color: '#000',
+        color: '#000'
       },
     },
     MuiAppBar: {
@@ -30,19 +31,38 @@ export const LightTheme = createTheme({
         position: 'fixed',
       },
       styleOverrides: {
-        root: {},
+        root: {
+          backgroundColor: '#fff',
+        },
       },
     },
     MuiButton: {
+      defaultProps: {
+        color: 'secondary',
+        variant: 'text',
+      },
       styleOverrides: {
         root: {
           fontWeight: 400,
           textTransform: 'none',
           boxShadow: 'none',
           borderRadius: 10,
-          color: '#000',
         },
       },
     },
+    MuiIconButton: {
+      styleOverrides: {
+        root: {
+          color: teal[500]
+        },
+      },
+    },
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          color: teal[500]
+        },
+      },
+    }
   },
 });

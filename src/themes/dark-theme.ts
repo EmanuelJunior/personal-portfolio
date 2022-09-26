@@ -32,7 +32,7 @@ export const DarkTheme = createTheme({
       },
       styleOverrides: {
         root: {
-          backgroundColor: 'transparent'
+          backgroundColor: '#111'
         }
       }
     },
@@ -59,6 +59,13 @@ export const DarkTheme = createTheme({
           backgroundColor: '#121212',
         },
       }
+    },
+    MuiListItemIcon: {
+      styleOverrides: {
+        root: {
+          color: teal[400]
+        },
+      },
     }
 
   }

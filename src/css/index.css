@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::selection {
+  background-color: #009486;
+  color: #fff;
+}
+
+.header__font {
+  position: relative;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header__font-light { background-image: url('/src/assets/img/header/header-font__light.svg');  }
+.header__font-dark { background-image: url('/src/assets/img/header/header-font__dark.svg'); }
+
+.header__img {
+  position: relative;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  background-image: url('/src/assets/img/header/header-React.svg');
+}
+
