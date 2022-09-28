@@ -32,7 +32,7 @@ export const LightTheme = createTheme({
       },
       styleOverrides: {
         root: {
-          backgroundColor: '#fff',
+          backgroundColor: 'transparent',
         },
       },
     },

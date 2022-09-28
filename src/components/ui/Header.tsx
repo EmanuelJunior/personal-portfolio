@@ -5,7 +5,6 @@ export const Header = () => {
 
   const { palette:{ mode } } = useTheme();
   const themeValidation = mode === 'light' ? 'header__font-light' : 'header__font-dark';
-  console.log(mode);
 
   return (
     <Grid

@@ -2,6 +2,6 @@ import ReactDOM from 'react-dom/client'
 
 import App from './App'
 import 'animate.css';
-import './css/index.css';
+import './sass/index.scss';
 
 ReactDOM.createRoot( document.getElementById('root') as HTMLElement).render( <App /> );

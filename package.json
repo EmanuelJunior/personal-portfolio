@@ -16,8 +16,11 @@
     "@mui/icons-material": "^5.10.3",
     "@mui/material": "^5.10.3",
     "animate.css": "^4.1.1",
+    "node-sass": "^7.0.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.36.1",
+    "sass": "^1.55.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",

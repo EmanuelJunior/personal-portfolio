@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Global config
+@import './config';
+
+// Components
+@import './Home/Header';
+@import './Home/Contact';
+
+

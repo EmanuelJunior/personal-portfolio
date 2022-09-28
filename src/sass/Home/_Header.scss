@@ -1,0 +1,26 @@
+.header {
+  &__font {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &__font-light {
+    background-image: url('/src/assets/img/header/header-font__light.svg');
+  }
+
+  &__font-dark {
+    background-image: url('/src/assets/img/header/header-font__dark.svg');
+  }
+
+  &__img {
+    position: relative;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: Calc(100vh - 64px);
+    background-image: url('/src/assets/img/header/header-React.svg');
+  }
+}

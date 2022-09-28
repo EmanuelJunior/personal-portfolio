@@ -1,4 +1,4 @@
-import { Header, NavBar, SideMenu } from "./components/ui/";
+import { Contact, Header, NavBar, SideMenu } from "./components/ui/";
 
 export const LandingPage = () => {
   return (
@@ -7,6 +7,7 @@ export const LandingPage = () => {
       <SideMenu />
       
       <Header/>
+      <Contact/>
     </>
   );
 };

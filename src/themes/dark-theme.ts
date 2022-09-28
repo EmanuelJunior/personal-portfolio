@@ -32,7 +32,7 @@ export const DarkTheme = createTheme({
       },
       styleOverrides: {
         root: {
-          backgroundColor: '#111'
+          backgroundColor: 'transparent',
         }
       }
     },
