@@ -4,14 +4,6 @@ button {
 
 .contact {
 
-  &__font-light {
-    background-image: url('/src/assets/img/header/header-font__light.svg');
-  }
-
-  &__font-dark {
-    background-image: url('/src/assets/img/header/header-font__dark.svg');
-  }
-
   &__container {
     @apply rounded-md p-10 w-full sm:w-full md:w-3/4 lg:w-2/4 xl:w-2/4 2xl:w-2/4 flex flex-col;
     background: rgba( 255, 255, 255, 0.1 );
@@ -24,12 +16,6 @@ button {
     
     &--font {
       @apply flex justify-center pb-8 pt-9 px-3;
-      width: 100%;
-      position: relative;
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
     }
   }
 

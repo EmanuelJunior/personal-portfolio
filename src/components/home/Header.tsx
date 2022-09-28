@@ -1,10 +1,10 @@
 import { Box, Grid, Typography, useTheme } from "@mui/material";
 import { teal } from "@mui/material/colors";
+import { themeValidation } from "./utils/themeValidation";
 
 export const Header = () => {
 
   const { palette:{ mode } } = useTheme();
-  const themeValidation = mode === 'light' ? 'header__font-light' : 'header__font-dark';
 
   return (
     <Grid
@@ -12,7 +12,7 @@ export const Header = () => {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      className={`header__font ${ themeValidation } px-10 overflow-y-hidden`}
+      className={`global__font ${ themeValidation( mode ) } px-10 overflow-y-hidden`}
       container
     >
       <Grid xs={12} sm={7} className='flex justify-center items-center' sx={{ mt: { xs: 2, sm: 0 } }}>

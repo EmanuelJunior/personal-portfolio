@@ -1,3 +1,23 @@
+
+// Global font
+.global {
+  &__font {
+    position: relative;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    &-light {
+      background-image: url('/src/assets/img/header/header-font__light.svg');
+    }
+
+    &-dark {
+      background-image: url('/src/assets/img/header/header-font__dark.svg');
+    }
+  }
+}
+
 *::selection {
   background-color: #009486;
   color: #fff;
