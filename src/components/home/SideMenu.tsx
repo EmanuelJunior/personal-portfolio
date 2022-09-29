@@ -11,25 +11,25 @@ import { SocialMediaUrls } from './data/SocialMediaUrls';
 export const SideMenu = () => {
 
   const { gitHub, linkedIn, reddit } = SocialMediaUrls;
-  const { openClose, setOpenClose } = useContext( UIContext );
+  const { ui, setUi } = useContext( UIContext );
   
   const matches = useMediaQuery(
     DarkTheme.breakpoints.up('sm') 
     || LightTheme.breakpoints.up('sm')
   );
 
-  useEffect(() => { matches && setOpenClose( false ) }, [matches, setOpenClose]);
+  useEffect(() => { matches && setUi({ ...ui, openClose: false }) }, [matches, setUi]);
 
   return (
     <Drawer 
-      anchor='bottom' open={ openClose } 
-      onClose={ toggleDrawer( false, setOpenClose ) }
+      anchor='bottom' open={ ui.openClose } 
+      onClose={ toggleDrawer( false, setUi ) }
       sx={{ backdropFilter: "blur(2px)", transition: "all 0.5s ease-out" }}
     >
       <List sx={{ borderTop: `1px solid #333` }}>
         <ListItem sx={{ my: 2}}>
           <ListItemIcon>
-            <Avatar alt='EmanuelJunior' sx={{ width: 56, height: 56 }} src='/src/assets/img/emanuelJunior.jpeg'>A</Avatar>
+            <Avatar alt='EmanuelJunior' sx={{ width: 56, height: 56 }} src='/src/assets/img/emanuelJunior.jpeg'>E</Avatar>
           </ListItemIcon>
           <Typography sx={{ ml: 2 }} variant='h6'>Emanuel Junior</Typography>
         </ListItem>

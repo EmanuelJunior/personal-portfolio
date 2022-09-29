@@ -15,7 +15,7 @@ export const Header = () => {
       className={`global__font ${ themeValidation( mode ) } px-10 overflow-y-hidden`}
       container
     >
-      <Grid xs={12} sm={7} className='flex justify-center items-center' sx={{ mt: { xs: 2, sm: 0 } }}>
+      <Grid item xs={12} sm={7} className='flex justify-center items-center' sx={{ mt: { xs: 2, sm: 0 } }}>
         <Box>
           <Typography variant='h6' fontWeight='bold' color={ teal[200] }>Hello, I'm</Typography>
           <Typography variant='h3'>Emanuel Garcés</Typography>
@@ -24,7 +24,7 @@ export const Header = () => {
           {/* <Typography variant='subtitle1'>"If you can imagine it you can program it" <span className='font-bold' style={{ color: teal[300] }}>ProgramacionATS</span> </Typography> */}
         </Box>
       </Grid>
-      <Grid xs={12} sm={5} className='flex justify-center items-center'>
+      <Grid item xs={12} sm={5} className='flex justify-center items-center'>
         <div className='header__img w-full'></div>
       </Grid>
     </Grid>

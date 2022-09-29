@@ -1,9 +1,19 @@
 import { createContext } from "react";
 
-export interface IUIContext {
-  openClose?: boolean;
-  setOpenClose?: any;
+export interface IUi {
+  openClose: boolean,
+  theme: 'dark' | 'light'
 }
 
-export const UIContext = createContext<IUIContext>({});
+export interface IUIContext {
+  ui: IUi;
+  setUi?: any;
+}
+
+export const UIContext = createContext<IUIContext>({
+  ui: {
+    openClose: false,
+    theme: 'dark'
+  }
+});
 

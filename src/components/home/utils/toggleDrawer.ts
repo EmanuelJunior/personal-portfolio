@@ -1,5 +1,6 @@
+import { IUi } from '../../../context/UIContext';
 
-export const toggleDrawer = ( open: boolean, setOpenClose: ( openClose: boolean ) => void ) =>
+export const toggleDrawer = ( open: boolean, setOpenClose: any ) =>
   (event: React.KeyboardEvent | React.MouseEvent) => {
     if ( event.type === 'keydown' &&
       ((event as React.KeyboardEvent).key === 'Tab' ||
@@ -8,5 +9,5 @@ export const toggleDrawer = ( open: boolean, setOpenClose: ( openClose: boolean 
       return;
     }
 
-    setOpenClose( open );
+    setOpenClose( (ui: IUi) => ({ ...ui, openClose: open }) );
   };
