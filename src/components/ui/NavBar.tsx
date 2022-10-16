@@ -4,7 +4,7 @@ import { AppBar, Box, IconButton, Link, Toolbar, Button, Typography, Avatar } fr
 import { GitHub, LinkedIn, Reddit, Menu, Close  } from '@mui/icons-material';
 
 import { IUIContext, UIContext } from '../../context';
-import { SocialMediaUrls } from './data/SocialMediaUrls';
+import { SocialMediaUrls } from '../home/data';
 
 export const NavBar = () => {
 
@@ -33,13 +33,13 @@ export const NavBar = () => {
 
       <Box sx={{ display: { xs: 'none', sm: 'flex' } }} flex={1} justifyContent='center'>
         <Link>
-          <Button>Experience</Button>
+          <Button sx={{ fontSize: { xl: '1.1rem' } }}>Experience</Button>
         </Link>
         <Link>
-          <Button>Projects</Button>
+          <Button sx={{ fontSize: { xl: '1.1rem' } }}>Projects</Button>
         </Link>
         <Link>
-          <Button>Contact</Button>
+          <Button sx={{ fontSize: { xl: '1.1rem' } }}>Contact</Button>
         </Link>
       </Box>
 

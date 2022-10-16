@@ -28,6 +28,7 @@ button {
 
   &__inputs, &__textarea {
     @apply p-2 px-4 rounded  mt-3 focus:outline-none focus:text-gray-600 text-gray-600 placeholder-gray-700;
+    @apply 2xl:text-xl;
     background: rgba( 255, 255, 255, 0.2 );
     box-shadow: 0 8px 32px 0 rgba(31, 135, 121, 0.37);
     backdrop-filter: blur( 4.5px );

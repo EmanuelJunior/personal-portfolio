@@ -10,6 +10,9 @@ export const DarkTheme = createTheme({
     secondary: {
       main: teal[500],
     },
+    info: {
+      main: '#000'
+    },
     error: {
       main: "#d32f2f",
     },
@@ -66,7 +69,13 @@ export const DarkTheme = createTheme({
           color: teal[400]
         },
       },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          backgroundColor: '#111',
+        },
+      },
     }
-
   }
 })

@@ -4,9 +4,9 @@ import { Drawer, List, ListItem, ListItemIcon, ListItemText, Divider, Avatar, Ty
 import { WorkHistoryOutlined, ConnectWithoutContactOutlined, Web, GitHub, LinkedIn, Reddit } from '@mui/icons-material';
 
 import { UIContext } from '../../context';
-import { toggleDrawer } from './utils/toggleDrawer';
+import { toggleDrawer } from '../home/utils';
 import { DarkTheme, LightTheme } from '../../themes';
-import { SocialMediaUrls } from './data/SocialMediaUrls';
+import { SocialMediaUrls } from '../home/data';
 
 export const SideMenu = () => {
 

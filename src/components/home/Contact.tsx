@@ -3,8 +3,6 @@ import { Typography, useTheme } from '@mui/material';
 import { teal } from '@mui/material/colors';
 import { Email } from "@mui/icons-material";
 
-import { themeValidation } from "./utils/themeValidation";
-
 type Inputs = {
   name: string,
   subject: string,
@@ -21,7 +19,7 @@ export const Contact = () => {
   const themeValidationDrk = mode === 'dark' && 'contact__dark';
 
   return (
-    <div className={ `${themeValidationDrk} ${ themeValidation( mode ) } global__font   contact__container--font` } id="contact">
+    <div className={ `${themeValidationDrk} contact__container--font` } id="contact">
       <form onSubmit={ handleSubmit( onSubmit ) } className="contact__container animate__animated animate__lightSpeedInLeft text-red-900">
         <Typography variant='h2' component='h2' className="contact__title">
           <Email sx={{ width: '50px', height: '50px', color: mode === 'light' ? teal[600] : teal[500] }}/>

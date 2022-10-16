@@ -1,44 +1,23 @@
-import { AboutMe, Contact, Header, MySkills, NavBar, Projects, SideMenu } from "./components/home/";
-import { Box, IconButton } from '@mui/material';
-import { DarkMode, LightMode, Translate } from "@mui/icons-material";
-import { useContext } from 'react';
-import { UIContext } from "./context";
-import { amber, blue, teal } from '@mui/material/colors';
+import { AboutMe, ChangeModeLanguage, Contact, Header, MySkills } from "./components/home/";
+import { NavBar, SideMenu } from "./components/ui";
+import { Box, useTheme } from '@mui/material';
+import { themeValidation } from "./components/home/utils";
 
 export const LandingPage = () => {
 
-  const { ui, setUi } = useContext(UIContext);
-
-  const changeModes = () => {
-    const darkOrLight = ui.theme === 'dark' ? 'light' : 'dark';
-    localStorage.setItem('theme', darkOrLight );
-    console.log( localStorage.getItem('theme') );
-    setUi({ ...ui, theme: darkOrLight });
-  }
+  const { palette:{ mode } } = useTheme();
 
   return (
-    <>
+    <Box className={`${ themeValidation( mode ) } global__font`}>
       <NavBar />
       <SideMenu />
       
       <Header/>
       <AboutMe/>
-      {/* <MySkills/> */}
+      <MySkills/>
       {/* <Projects/> */}
       <Contact/>
-
-      <Box sx={{ position: 'fixed', bottom: 0}}>
-        <IconButton 
-          onClick={ changeModes } 
-          sx={{ color: ui.theme === 'light' ? '#fff' : '#222'}}
-          size='large'
-        >
-          { ui.theme === 'light' ? <LightMode fontSize="large"/> : <DarkMode fontSize="large"/> }
-        </IconButton>
-        <IconButton sx={{ color: blue[900], position: 'fixed', right: 0 }} size='large'>
-          <Translate fontSize="large"/>
-        </IconButton>
-      </Box>
-    </>
+      <ChangeModeLanguage/>
+    </Box>
   );
 };

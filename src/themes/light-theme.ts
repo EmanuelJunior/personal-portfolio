@@ -10,6 +10,9 @@ export const LightTheme = createTheme({
     secondary: {
       main: teal[600],
     },
+    info: {
+      main: '#fff'
+    },
     error: {
       main: '#d32f2f',
     },
@@ -61,6 +64,14 @@ export const LightTheme = createTheme({
       styleOverrides: {
         root: {
           color: teal[500]
+        },
+      },
+    },
+    MuiCard: {
+      styleOverrides: {
+        root: {
+          boxShadow: 'none',
+          border: '1px solid #eee'
         },
       },
     }
