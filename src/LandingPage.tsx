@@ -2,6 +2,7 @@ import { AboutMe, ChangeModeLanguage, Contact, Header, MySkills } from "./compon
 import { NavBar, SideMenu } from "./components/ui";
 import { Box, useTheme } from '@mui/material';
 import { themeValidation } from "./components/home/utils";
+import { ListProject } from "./components/home/projects";
 
 export const LandingPage = () => {
 
@@ -15,7 +16,7 @@ export const LandingPage = () => {
       <Header/>
       <AboutMe/>
       <MySkills/>
-      {/* <Projects/> */}
+      <ListProject/>
       <Contact/>
       <ChangeModeLanguage/>
     </Box>
