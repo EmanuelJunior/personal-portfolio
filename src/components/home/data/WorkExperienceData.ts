@@ -1,3 +1,12 @@
+export interface IWorkExperienceData {
+  title: string;
+  date: string;
+  description: string;
+  image: string;
+  github: string;
+  website: string;
+  tags: string[];
+}
 
 export const WorkExperienceData = [
   {

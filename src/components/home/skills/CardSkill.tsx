@@ -1,12 +1,8 @@
 import { Grid, CardActionArea, LinearProgress, Card, CardContent, Avatar, Typography, Box } from '@mui/material';
 import { FC } from 'react';
+import { IMySkillsData } from '../data';
 
-interface Props {
-  title: string;
-  url: string;
-  level: string;
-  progress: number;
-}
+interface Props extends IMySkillsData {}
 
 export const CardSkill: FC<Props> = ({ title, url, level, progress }) => {
   return (

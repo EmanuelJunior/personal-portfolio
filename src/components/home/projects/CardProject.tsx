@@ -2,16 +2,9 @@ import { Grid, Typography, Card, CardHeader, Avatar, CardMedia, CardContent, Car
 import { GitHub, Web } from '@mui/icons-material';
 import { teal } from '@mui/material/colors';
 import { FC } from 'react';
+import { IWorkExperienceData } from '../data';
 
-interface Props {
-  title: string;
-  date: string;
-  description: string;
-  image: string;
-  github: string;
-  website: string;
-  tags: string[];
-}
+interface Props extends IWorkExperienceData {}
 
 export const CardProject: FC<Props> = ({ title, date, description, image, github, website, tags }) => {
   return (

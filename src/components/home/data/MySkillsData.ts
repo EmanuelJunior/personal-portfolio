@@ -1,4 +1,4 @@
-interface IMySkillsData { 
+export interface IMySkillsData { 
   url: string;  
   title: string;
   level: string;

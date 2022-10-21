@@ -1,7 +1,11 @@
-import { Download } from '@mui/icons-material';
-import { Grid, Typography, Box, CardMedia, Button } from '@mui/material';
+import { Download, PeopleAltOutlined, MilitaryTech, FolderSpecial, FolderSpecialOutlined, PeopleAlt } from '@mui/icons-material';
+import { Grid, Typography, Box, CardMedia, Button, Card, CardHeader, CardContent, CardActionArea } from '@mui/material';
+import { DataForCardsAboutMe } from './data';
+import { CardAboutMe } from './cards/CardAboutMe';
 
 export const AboutMe = () => {
+
+
 
   return (
     <Grid container display='flex' justifyContent='center'>
@@ -32,6 +36,11 @@ export const AboutMe = () => {
             sx={{ mb: 3, fontSize: { xs: '1.75rem', xl: '2rem' } }} 
             fontWeight='bold' 
           >Who I am ?</Typography>
+
+          <Grid container spacing={2} mb={3} display='flex' justifyContent={'center'}>
+            { DataForCardsAboutMe.map( data => ( <CardAboutMe { ...data } key={ data.title }/> )) }
+          </Grid>
+
           <Typography sx={{ mt: { xs: 0, xl: 4 }, fontSize: { xs: '1rem', xl: '1.25rem' } }}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, reiciendis porro eum minus quam ex dolor nesciunt corporis atque architecto nam nobis id sit molestias impedit neque fugit eveniet dignissimos!</Typography>
           <Typography sx={{ fontSize: { xs: '1rem', xl: '1.25rem' } }} marginTop={2}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora excepturi, quam aliquid non et est omnis minus aperiam quae error sint dolorum? Aliquid accusantium dolorem rem, blanditiis accusamus fuga laudantium!</Typography>
           <Button 

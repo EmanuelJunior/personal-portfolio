@@ -1,5 +1,5 @@
 import { Grid, Typography, Box } from '@mui/material';
-import { teal } from '@mui/material/colors';
+import { grey, teal } from '@mui/material/colors';
 import { CardSkill } from './CardSkill';
 import { MySkillsData } from '../data';
 
@@ -8,7 +8,8 @@ export const MySkills = () => {
   return (
     <Grid container display='flex' justifyContent='center' mt={14} mb={10}>
       <Grid item xs={12} className='px-5 py-5'>
-        <Typography sx={{ fontSize: { xs: '2.125rem', xl: '3rem' } }} fontWeight='bold'>My <span style={{ color: teal[500] }}>Skills</span></Typography>
+        <Typography sx={{ fontSize: { xs: '2.125rem', xl: '3rem' } }} fontWeight='bold'>My Skills</Typography>
+        <Typography sx={{ fontSize: { xs: '1rem', xl: '1.25rem' } }} fontWeight='bold' color={'secondary'}>What Skills I Have</Typography>
       </Grid>
 
       <Grid item xs={12} sm={6} display='flex' alignItems='center'>
