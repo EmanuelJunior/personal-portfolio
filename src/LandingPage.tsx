@@ -1,4 +1,4 @@
-import { AboutMe, ChangeModeLanguage, Contact, Header, MySkills } from "./components/home/";
+import { AboutMe, ChangeModeLanguage, Contact, Header, MySkills, Footer } from "./components/home/";
 import { NavBar, SideMenu } from "./components/ui";
 import { Box, useTheme } from '@mui/material';
 import { themeValidation } from "./components/home/utils";
@@ -19,6 +19,7 @@ export const LandingPage = () => {
       <ListProject/>
       <Contact/>
       <ChangeModeLanguage/>
+      <Footer/>
     </Box>
   );
 };

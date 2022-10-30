@@ -4,4 +4,5 @@ export * from "./Header";
 export * from "./Contact";
 export * from "./AboutMe";
 export * from './ChangeModeLanguage';
+export * from './Footer';
 

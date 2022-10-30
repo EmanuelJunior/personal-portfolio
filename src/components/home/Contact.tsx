@@ -28,25 +28,25 @@ export const Contact = () => {
         <input 
           { ...register('name') }
           name="name" className="contact__inputs" 
-          type="text" placeholder="Nombre" spellCheck="false"
+          type="text" placeholder="Name" spellCheck="false"
         />
 
         <input 
           { ...register('subject') }
           name="subject" className="contact__inputs" 
-          type="text" placeholder="Asunto" spellCheck="false"
+          type="text" placeholder="Subject" spellCheck="false"
         />
 
         <input 
           { ...register('email') }
           name="email" className="contact__inputs" 
-          type="text" placeholder="Correo" spellCheck="false"
+          type="text" placeholder="Email" spellCheck="false"
         />
 
         <textarea 
           { ...register('message') }
           name="message" className="contact__textarea" 
-          placeholder="Mensaje"
+          placeholder="Message"
         />
 
         <button className="contact__button-send">
@@ -58,7 +58,7 @@ export const Contact = () => {
               </svg>
             </div>
           </div>
-          <span>Enviar</span>
+          <span>Send</span>
         </button>
       </form>
     </div> 

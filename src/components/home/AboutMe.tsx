@@ -17,7 +17,7 @@ export const AboutMe = () => {
           fontWeight='bold' 
           marginBottom={2}
           sx={{ fontSize: { xs: '1rem', xl: '1.25rem' } }}
-        >Frontend Developer</Typography>
+        >Web Developer</Typography>
       </Grid>
 
       <Grid item xs={12} sm={5} className='px-10'>
@@ -38,7 +38,7 @@ export const AboutMe = () => {
           >Who I am ?</Typography>
 
           <Grid container spacing={2} mb={3} display='flex' justifyContent={'center'}>
-            { DataForCardsAboutMe.map( data => ( <CardAboutMe { ...data } key={ data.title }/> )) }
+            { DataForCardsAboutMe.map( data => ( <CardAboutMe { ...data }/> )) }
           </Grid>
 
           <Typography sx={{ mt: { xs: 0, xl: 4 }, fontSize: { xs: '1rem', xl: '1.25rem' } }}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, reiciendis porro eum minus quam ex dolor nesciunt corporis atque architecto nam nobis id sit molestias impedit neque fugit eveniet dignissimos!</Typography>
