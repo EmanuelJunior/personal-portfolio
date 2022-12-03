@@ -1,9 +1,13 @@
+import { useId } from 'react';
 import { Grid, Typography, Box } from '@mui/material';
-import { grey, teal } from '@mui/material/colors';
+import { teal } from '@mui/material/colors';
+
 import { CardSkill } from './CardSkill';
 import { MySkillsData } from '../data';
 
 export const MySkills = () => {
+
+  const id = useId();
 
   return (
     <Grid container display='flex' justifyContent='center' mt={14} mb={10}>
@@ -26,7 +30,7 @@ export const MySkills = () => {
 
       <Grid item xs={12} sm={5} className='px-10' display='flex' flexDirection={'column'} alignItems='center' justifyContent='center'>
         <Grid container xs={12} spacing={2}>
-          { MySkillsData.map( skill => <CardSkill {...skill}/>) }
+          { MySkillsData.map( (skill, i) => <CardSkill key={`${id}-${i}`} {...skill}/>) }
         </Grid>
       </Grid>
     </Grid>

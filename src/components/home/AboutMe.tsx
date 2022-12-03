@@ -2,10 +2,11 @@ import { Download, PeopleAltOutlined, MilitaryTech, FolderSpecial, FolderSpecial
 import { Grid, Typography, Box, CardMedia, Button, Card, CardHeader, CardContent, CardActionArea } from '@mui/material';
 import { DataForCardsAboutMe } from './data';
 import { CardAboutMe } from './cards/CardAboutMe';
+import { useId } from 'react';
 
 export const AboutMe = () => {
 
-
+  const id = useId();
 
   return (
     <Grid container display='flex' justifyContent='center'>
@@ -23,7 +24,7 @@ export const AboutMe = () => {
       <Grid item xs={12} sm={5} className='px-10'>
         <CardMedia
           component='img'
-          image='/src/assets/img/AboutMe/profile.svg'
+          image='/assets/img/AboutMe/profile.svg'
           alt='profile'
         />
       </Grid>
@@ -38,7 +39,7 @@ export const AboutMe = () => {
           >Who I am ?</Typography>
 
           <Grid container spacing={2} mb={3} display='flex' justifyContent={'center'}>
-            { DataForCardsAboutMe.map( data => ( <CardAboutMe { ...data }/> )) }
+            { DataForCardsAboutMe.map( (data, i) => ( <CardAboutMe key={`${id}-${i}`} { ...data }/> )) }
           </Grid>
 
           <Typography sx={{ mt: { xs: 0, xl: 4 }, fontSize: { xs: '1rem', xl: '1.25rem' } }}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, reiciendis porro eum minus quam ex dolor nesciunt corporis atque architecto nam nobis id sit molestias impedit neque fugit eveniet dignissimos!</Typography>

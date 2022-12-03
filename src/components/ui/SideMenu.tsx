@@ -29,7 +29,7 @@ export const SideMenu = () => {
       <List sx={{ borderTop: `1px solid #333` }}>
         <ListItem sx={{ my: 2}}>
           <ListItemIcon>
-            <Avatar alt='EmanuelJunior' sx={{ width: 56, height: 56 }} src='/src/assets/img/emanuelJunior.jpeg'>E</Avatar>
+            <Avatar alt='EmanuelJunior' sx={{ width: 56, height: 56 }} src='/assets/img/emanuelJunior.jpeg'>E</Avatar>
           </ListItemIcon>
           <Typography sx={{ ml: 2 }} variant='h6'>Emanuel Junior</Typography>
         </ListItem>

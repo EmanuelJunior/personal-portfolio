@@ -26,7 +26,7 @@ export const NavBar = () => {
 
         <Box display='flex' alignItems='center' flex={1} sx={{ display: { xs: 'none', sm: 'flex' } }}>
           <IconButton sx={{ mr: 1 }} color='primary'>
-            <Avatar alt='EmanuelJunior' sx={{ width: { xs: 45, xl: 55 }, height: { xs: 45, xl: 55 } }} src='/src/assets/img/emanuelJunior.jpeg'>A</Avatar>
+            <Avatar alt='EmanuelJunior' sx={{ width: { xs: 45, xl: 55 }, height: { xs: 45, xl: 55 } }} src='/assets/img/emanuelJunior.jpeg'>A</Avatar>
           </IconButton>
           <Typography variant='h6' sx={{ ml: 2, fontSize: { xs: '1.25rem', xl: '1.5rem' } }}>Emanuel Junior</Typography>
         </Box>
